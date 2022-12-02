@@ -1,6 +1,12 @@
 function redistributeWealth(wealth) {
-  // Write your code here
+  let wealthSum = wealth.reduce((first, second) => first + second)
 
+  let newWealth = [];
+
+  for(let i=0; i<wealth.length; i++) {
+    newWealth.push(wealthSum/wealth.length);
+  }
+  return newWealth;
 }
 
 
