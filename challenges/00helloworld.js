@@ -1,6 +1,5 @@
 function hello() {
-  // Write your code here
-
+  return 'Hello world.';
 } 
 
 
