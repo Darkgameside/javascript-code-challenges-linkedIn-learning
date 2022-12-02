@@ -1,6 +1,11 @@
 function capitalize(string) {
-  // Write your code here
+  const arrString = string.split(" ");
 
+  for (var i = 0; i < arrString.length; i++) {
+    arrString[i] = arrString[i].charAt(0).toUpperCase() + arrString[i].slice(1);
+
+  }
+  return arrString.join(" ");
 }
 
 
