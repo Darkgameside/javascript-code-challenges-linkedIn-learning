@@ -1,6 +1,14 @@
 const rps = (p1, p2) => {
-  // Write your code here
+  if (p1 === p2) return 0;
 
+  switch (p1) {
+  case 'rock':
+    return p2 === 'scissors' ? 1 : 2;
+  case 'paper':
+    return p2 === 'rock' ? 1 : 2;
+  case 'scissors':
+    return p2 === 'paper' ? 1 : 2;
+  }
 }
 
 const { assert } = require('chai'); 
